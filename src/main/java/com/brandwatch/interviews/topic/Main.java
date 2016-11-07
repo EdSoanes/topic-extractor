@@ -20,7 +20,7 @@ public class Main {
         System.out.println("Topic Extraction Demo");
         ApplicationContext context = new AnnotationConfigApplicationContext("com.brandwatch.interviews.topic");
         TopicDemoConfig config = new TopicDemoConfig();
-        new JCommander(config, args);
+        JCommander jCommander = new JCommander(config, args);
         Main main = context.getBean(Main.class);
         System.out.println(main.titleGenerator.buildTitle());
         main.demo.runDemo(config);

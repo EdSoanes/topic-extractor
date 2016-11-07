@@ -7,5 +7,12 @@ import java.io.File;
 
 public class TopicDemoConfig {
     @Parameter(names = "-input", converter = FileConverter.class)
-    File file;
+    File blog;
+
+    @Parameter(names = "-stoplist", converter = FileConverter.class)
+    File stoplist;
+
+    @Parameter(names = "-synonyms", converter = FileConverter.class)
+    File synonyms;
+
 }
