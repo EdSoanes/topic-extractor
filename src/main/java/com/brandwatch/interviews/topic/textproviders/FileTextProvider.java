@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 @Component
-public class FileTextProvider {
+public class FileTextProvider implements TextProvider {
 
     public String readText(String fileName) throws IOException {
 

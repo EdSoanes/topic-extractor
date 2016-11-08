@@ -70,8 +70,8 @@ public class StopListFilter implements Filter {
     private boolean InStoplist(Token token) {
 
         if (token != null) {
-            String label = token.getLabel().toLowerCase();
-            return stopList.stream().filter(x -> x.equals(label)).count() == 1;
+            String tokenLabel = token.getLabel().toLowerCase();
+            return stopList.stream().filter(x -> x.equals(tokenLabel)).count() == 1;
         }
 
         return false;

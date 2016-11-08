@@ -1,0 +1,7 @@
+risks=risk
+customers=customer
+businesses=business
+threats=threat
+provider's=provider
+providers=provider
+organization's=organization

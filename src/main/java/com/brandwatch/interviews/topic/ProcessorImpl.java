@@ -1,6 +1,7 @@
 package com.brandwatch.interviews.topic;
 
 import com.brandwatch.interviews.topic.filters.Filter;
+import com.brandwatch.interviews.topic.output.OutputProvider;
 import com.brandwatch.interviews.topic.settings.SettingsProvider;
 import com.brandwatch.interviews.topic.textproviders.TextProvider;
 import com.brandwatch.interviews.topic.tokenizers.TokenResults;
@@ -14,7 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Component
-public class DemoImpl implements Demo {
+public class ProcessorImpl implements Processor {
 
     @Autowired
     private SettingsProvider settingsProvider;
@@ -33,7 +34,10 @@ public class DemoImpl implements Demo {
     @Qualifier("synonymfilter")
     private Filter synonymFilter;
 
-    public void runDemo(TopicDemoConfig config) {
+    @Autowired
+    private OutputProvider outputProvider;
+
+    public void process() {
         try {
 
             //Load the text
@@ -47,8 +51,8 @@ public class DemoImpl implements Demo {
             for (Filter filter : filters)
                 filter.Filter(tokenResults);
 
-            //TopicResults results = extractor.extract(inputText);
-            //printer.print(results);
+            outputProvider.Output(tokenResults);
+
         } catch (IOException e) {
             System.err.println("Failed");
         }

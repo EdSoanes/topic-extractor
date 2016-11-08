@@ -26,20 +26,20 @@ public class SynonymFilter implements Filter {
     @Autowired
     private SettingsProvider settingsProvider;
 
-    private HashMap<String, String> synonyms = new HashMap<String, String>();
+    private HashMap<String, String> synonyms;
 
-    public SynonymFilter() {
-
-        LoadSynonyms();
-    }
-
-    private void LoadSynonyms() {
+    private synchronized void LoadSynonyms() {
         try {
-            List<String> synonymValues = Arrays.asList(textProvider.readTextLines(settingsProvider.getStoplistPath()));
-            for (String synonymValue : synonymValues) {
-                String[] values = synonymValue.split("=");
-                if (!synonyms.containsKey(values[0].toLowerCase())) {
-                    synonyms.put(values[0].toLowerCase(), values[1].toLowerCase());
+            if (synonyms == null)  {
+
+                synonyms = new HashMap<>();
+                List<String> synonymValues = Arrays.asList(textProvider.readTextLines(settingsProvider.getSynonymPath()));
+                for (String synonymValue : synonymValues) {
+
+                    String[] values = synonymValue.split("=");
+                    if (!synonyms.containsKey(values[0].toLowerCase())) {
+                        synonyms.put(values[0].toLowerCase(), values[1].toLowerCase());
+                    }
                 }
             }
 
@@ -50,6 +50,8 @@ public class SynonymFilter implements Filter {
 
     public void Filter(TokenResults tokenResults) {
 
+        LoadSynonyms();
+
         if (tokenResults != null) {
             for (Sentence sentence : tokenResults.getSentences()) {
 
@@ -58,7 +60,7 @@ public class SynonymFilter implements Filter {
 
                     Token nextToken = iterator.next();
                     String translated = Translate(nextToken);
-                    if (translated == "")
+                    if (translated.equals(""))
                         iterator.remove();
                     else
                         nextToken.setLabel(translated);

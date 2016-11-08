@@ -1,8 +1,11 @@
 package com.brandwatch.interviews.topic.settings;
 
+import org.springframework.stereotype.Component;
+
 /**
  * Created by ed on 07/11/2016.
  */
+@Component
 public class SimpleSettingsProvider implements SettingsProvider {
 
     private final String blogPath = "/Users/ed/Documents/_git/topic-interview-questions/src/main/resources/blog.txt";
