@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dff6e036-9acf-4d91-8219-3b399c3f6957" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_springframework_spring_context_4_3_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_springframework_spring_core_4_3_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/output/ConsoleOutputProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/output/OutputProvider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/SynonymFilter_Tests.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/TopicDemoConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/extractors/Topic.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/extractors/TopicExtractor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/extractors/TopicResults.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/extractors/simple/SimpleTopicExtractor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/printers/SimplePrinter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/printers/TopicResultsPrinter.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_3_2_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_4_RELEASE.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/Demo.java" afterPath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/Processor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/DemoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/ProcessorImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/filters/StopListFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/filters/StopListFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/filters/SynonymFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/filters/SynonymFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/settings/SimpleSettingsProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/settings/SimpleSettingsProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/textproviders/FileTextProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/brandwatch/interviews/topic/textproviders/FileTextProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/stoplist.txt" afterPath="$PROJECT_DIR$/src/main/resources/stoplist.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/synonyms.txt" afterPath="$PROJECT_DIR$/src/main/resources/synonyms.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/topic-extraction.iml" afterPath="$PROJECT_DIR$/topic-extraction.iml" />
-    </list>
+    <list default="true" id="dff6e036-9acf-4d91-8219-3b399c3f6957" name="Default" comment="" />
     <ignored path="topic-extraction.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -994,7 +962,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1478508954029</updated>
-      <workItem from="1478508958584" duration="27736000" />
+      <workItem from="1478508958584" duration="27813000" />
     </task>
     <servers />
   </component>
@@ -1031,7 +999,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27736000" />
+    <option name="totallyTimeSpent" value="27813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="23" width="1920" height="1109" extended-state="6" />
