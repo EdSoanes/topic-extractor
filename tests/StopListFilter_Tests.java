@@ -111,8 +111,10 @@ public class StopListFilter_Tests {
 
         assertEquals(2, res.getSentences().size());
         assertEquals(3, res.getSentences().get(0).tokenCount());
+        assertEquals(0, res.getSentences().get(0).getTokens().stream().filter(x -> x.getLabel().toLowerCase().equals("a")).count());
+
         assertEquals(2, res.getSentences().get(1).tokenCount());
-        assertEquals(0, res.getSentences().stream().filter(x -> x.equals("a")).count());
+        assertEquals(0, res.getSentences().get(1).getTokens().stream().filter(x -> x.getLabel().toLowerCase().equals("a")).count());
     }
 
     @Test
@@ -143,6 +145,6 @@ public class StopListFilter_Tests {
 
         assertEquals(1, res.getSentences().size());
         assertEquals(3, res.getSentences().get(0).tokenCount());
-        assertEquals(0, res.getSentences().stream().filter(x -> x.equals("a")).count());
+        assertEquals(0, res.getSentences().get(0).getTokens().stream().filter(x -> x.getLabel().toLowerCase().equals("a")).count());
     }
 }
